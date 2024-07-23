@@ -1,13 +1,11 @@
 body {
     background-color: #000;
     background-image: url(img/bacground1.1.png);
-    color: #fff;
+    color: #ffffff;
     padding: 0;
   }
   .navbar {
     background-color: #3A6678;
-    background: rgb(58,102,120);
-    background: linear-gradient(90deg, rgba(58,102,120,1) 19%, rgba(46,86,147,1) 50%, rgba(27,161,193,1) 82%, rgba(56,179,187,1) 97%);
     color: white;
     text-decoration: none;
     padding: 1%;
@@ -67,6 +65,10 @@ body {
 
   .icon{
     height: 3rem;
+  }
+
+  .collapsed{
+    color: rgb(0, 0, 0);
   }
 
   /* ----------------------------------------------
