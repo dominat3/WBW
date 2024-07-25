@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WysokaBikeWorkschoop</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #000;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .logo {
+        flex-shrink: 0;
+      }
+      .logo img {
+        height: 50px;
+      }
+      nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-info {
+        flex-shrink: 0;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -20,7 +52,11 @@
       "
     >
       <div style="flex-shrink: 0">
-        <img src="logo.png" alt="Wysoka Bike Workshop" style="height: 50px" />
+        <img
+          src="img/logo.priary.png"
+          alt="Wysoka Bike Workshop"
+          style="height: 50px"
+        />
       </div>
       <nav style="flex-grow: 1; display: flex; justify-content: space-around">
         <a href="#home" style="color: #fff; text-decoration: none">Home</a>
