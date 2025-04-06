@@ -12,6 +12,7 @@ body {
     text-decoration: none;
     padding: 1%;
   }
+  
   .navbar-brand img {
     height: 50px;
   }
@@ -107,4 +108,33 @@ body {
     color: black !important;
   }
 
+.kontakt{
+  background: rgba(191, 219, 247, 0.5);
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+a.my-button{
+  background: linear-gradient(to right,#e1e5f2 ,#bfdbf7);
+  background-color: #e1e5f2;
+  color: #1f7a8c;
+  font-family: Trebuchet MS;
+  font-size: 19px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 23px 21px;
+  border: 0px solid #000;
+  border-radius: 33px;
+  display: inline-block;
+  margin: 5%;
+ }
+ a.my-button:hover{
+  background: linear-gradient(to right,#e4e8f3 ,#c6dff8);
+  background-color: #e4e8f3;
+ }
+ a.my-button:active{
+  transform: scale(0.95);
+ }
