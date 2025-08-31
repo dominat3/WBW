@@ -1,26 +1,29 @@
-🚲 WBW – Bicycle Service Website
-A responsive website for a fictional bicycle repair service.
-Built with HTML, CSS, JavaScript, and Bootstrap 5, optimized for both mobile devices and desktop computers.
-🌐 Demo
-👉 View the website on GitHub Pages
-(https://dominat3.github.io/WBW/)
+# 🚲 WBW – Strona serwisu rowerowego
 
-![Main Page](img/screenshot-home.png)
-![Mobile view](img/screenshot-mobile.jpg)
+Responsywna strona internetowa dla serwisu rowerowego.  
+Wykonana w **HTML, CSS, JavaScript i Bootstrap 5**, przystosowana do działania na urządzeniach mobilnych i komputerach.
 
-🛠️ Technologies
-HTML5
-CSS3
-JavaScript
-Bootstrap 5
+## 🌐 Demo
+👉 [Zobacz stronę na GitHub Pages](https://szymon.tylinski.github.io/WBW/)
 
-🚀 Features
-Fully responsive design (RWD)
-Appointment booking form
-Service price list
-Contact section
-Optimized for mobile devices and desktops
+## 📸 Zrzuty ekranu
+![Strona główna](img/screenshot-home.png)
+![Widok mobilny](img/screenshot-mobile.png)
 
-⚙️ Installation and Setup
-Clone the repository:
-git clone https://github.com/dominat3/WBW.git
+## 🛠️ Technologie
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+
+## 🚀 Funkcje
+- Strona w pełni **responsywna** (RWD)
+- Formularz rezerwacji wizyty
+- Cennik usług
+- Sekcja kontaktowa
+- Przystosowana do urządzeń mobilnych i desktopowych
+
+## ⚙️ Instalacja i uruchomienie
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/szymontylinski/WBW.git
