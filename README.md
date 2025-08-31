@@ -10,7 +10,7 @@ Wykonana w **HTML, CSS, JavaScript i Bootstrap 5**, przystosowana do działania 
 ## 📸 Zrzuty ekranu
 
 ![Strona główna](img/screenshot-home.png)
-![Widok mobilny](img/screenshot-mobile.png)
+![Widok mobilny](img/screenshot-mobile.jpg)
 
 ## 🛠️ Technologie
 
