@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umów wizytę - Wysoka Bike Workshop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Ikony -->
+    <link rel="stylesheet" href="fontello-4e6ec23c/css/fontello.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Wys ka 12.42.21.png" />
+    <!-- Własne style -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Dodatkowe style dla sekcji umawiania wizyty */
+      .appointment-section {
+        background-color: #000;
+        background-image: url("img/bacground1.2.png");
+        color: #e1e5f2;
+        padding: 60px 0;
+      }
+      .appointment-header {
+        margin-bottom: 40px;
+      }
+      .appointment-header h1 {
+        font-size: 2.5rem;
+        color: #ff914d;
+      }
+      .appointment-instructions {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .appointment-card {
+        background-color: #bfdbf7;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      .appointment-iframe {
+        border: none;
+        width: 100%;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo / Nazwa serwisu -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <span>Wysoka Bike Workshop</span>
+        </a>
+        <!-- Toggler (dla mobilnych) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Linki w nawigacji -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="kontakt.html"
+                >Kontakt</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cennik.html">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="regulaminSerwisu.html">Regulamin</a>
+            </li>
+          </ul>
+          <!-- Przycisk "Umów wizytę" -->
+          <a href="booking.html" class="btn btn-umow d-flex align-items-center">
+            Umów wizytę
+            <img
+              src="icons/calendar.svg"
+              alt="calendar"
+              width="24"
+              style="margin-left: 8px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+      <div class="container">
+        <div class="appointment-header text-center">
+          <h1>Umów Wizytę</h1>
+          <p class="appointment-instructions">
+            Aby umówić wizytę, wybierz dogodny termin z kalendarza poniżej i
+            potwierdź rezerwację.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card appointment-card">
+              <div class="card-body">
+                <!-- Google Calendar Appointment Scheduling -->
+                <iframe
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wYe6ehbKzU4pDtEeKzF-w6qe5T6twHJz0pOMaa9-EEamm0TfUvMZ3xPaUQ8Kh3FO9KpLtXAz7?gv=true"
+                  class="appointment-iframe"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h4 class="text-center">Kontakt</h4>
+            <a href="tel:+48690032004" role="link" class="link">
+              <i class="icon-phone"></i>+48 690 032 004</a
+            ><br />
+            <a href="mail:szymon@wysokabikeworkshop.pl" class="link">
+              <i class="icon-mail"></i>szymon@wysokabikeworkshop.pl
+            </a>
+            <p>
+              <a
+                href="https://maps.app.goo.gl/AqNAdon2eLA94rbt8"
+                class="link"
+                target="_blank"
+                ><i class="icon-location"></i>ul. Chabrowa 97, Wysoka</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h4>Godziny otwarcia:</h4>
+            Poniedziałek - Piątek: 17:30 - 20:00<br />
+            Sobota: 10:00 - 18:00<br />
+            Niedziela: 14:00 - 20:00
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2024 Wysoka Bike Workshop. Wszelkie prawa zastrzeżone.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/toast.js"></script>
+  </body>
+</html>

@@ -5,39 +5,15 @@ body {
     color: #E1E5F2;
     padding: 0;
   }
-  .navbar {
-    background-color: #3A6678;
-    background-color: #1F7A8C;
-    color: white;
-    text-decoration: none;
-    padding: 1%;
-  }
   
   .navbar-brand img {
     height: 50px;
   }
-
-  .navbar-brand{
-    color: #FF914D;
-  }
-
-  .navbar-brand:hover{
-    color: #222;
-  }
-
   .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.1); /* Kolor obramowania przycisku */
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Kolor ikony */
-  }
-
-  .nav-link{
-    color: white !important;
-  }
-
-  .nav-link:hover{
-    color: #222 !important;
   }
 
   .header{
@@ -59,11 +35,13 @@ body {
     color: #E1E5F2;
     margin-top: 9%;
     height: 94%;
+    padding: 5%;
 
   }
   .card-header {
     background-color: #3A6678;
     background-color: #1F7A8C;
+    font-size: 2.5rem !important;
   }
   .list-group-item {
     background-color: #333;
@@ -82,7 +60,7 @@ body {
     color: white;
   }
   .link:hover{
-    color: #000;
+    color: #c6dff8;
     text-decoration: none;
   }
 
@@ -138,3 +116,215 @@ a.my-button{
  a.my-button:active{
   transform: scale(0.95);
  }
+
+
+ /* Ogólne tło i kolor dla całej nawigacji */
+.navbar {
+  background-color: #1F7A8C; /* Kolor tła */
+  padding: 1% 2%;
+}
+
+/* Kolor i styl brandu (nazwa serwisu) */
+.navbar-brand {
+  color: #FF914D; /* Pomarańczowy akcent */
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hover na brandzie */
+.navbar-brand:hover {
+  color: #ffffff; /* Lekka zmiana koloru w hoverze */
+}
+
+/* Zmiana koloru ikonki menu (hamburgera) w trybie mobilnym */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Linki w nawigacji */
+.nav-link {
+  color: #ffffff !important;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1.7rem;
+}
+
+.nav-link:hover {
+  color: #222 !important; /* Delikatny efekt hover */
+}
+
+/* Przycisk z numerem telefonu (opcjonalny) */
+.btn-phone {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Przycisk "Umów wizytę" - wyróżniający się CTA */
+.btn-umow {
+  background: linear-gradient(to right, #FF914D, #FF763B);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Efekt hover na CTA */
+.btn-umow:hover {
+  background: linear-gradient(to right, #FF763B, #FF914D);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.counter{
+  color: orange;
+}
+
+/* Zapewnia, że toast będzie wyświetlany na najwyższym poziomie */
+.toast-container {
+  z-index: 1055;
+}
+
+/* Styl toasta – ciemne tło, akcenty kolorystyczne */
+.toast {
+  background-color: #333; /* ciemne tło */
+  color: #E1E5F2; /* jasny kolor tekstu */
+  border: 2px solid #1F7A8C; /* niebieski akcent zgodny z navbar */
+  border-radius: 10px;
+}
+
+/* Styl nagłówka toasta */
+.toast-header {
+  background-color: #1F7A8C; /* tło zgodne z navbar */
+  color: #FF914D; /* pomarańczowy akcent w tekście */
+  border-bottom: 1px solid #FF914D;
+}
+
+/* Styl ciała toasta */
+.toast-body {
+  background-color: #222; /* jeszcze ciemniejsze tło dla treści */
+}
+
+/* Dostosowanie przycisku zamknięcia, by był widoczny na ciemnym tle */
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+
+/* Pricing Section */
+.pricing {
+  background-color: #000;
+  background-image: url("img/bacground1.2.png");
+  color: #E1E5F2;
+}
+
+/* Główne karty cennika */
+.pricing .card {
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+
+
+/* Nagłówki kart – używamy koloru tła zgodnego z navbar */
+.pricing .card-header {
+  background-color: #1F7A8C;
+  color: #FF914D;
+  padding: 1rem;
+}
+
+/* Accordion Button */
+.accordion-button {
+  background-color: #1F7A8C;
+  color: #E1E5F2;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  font-size: 2rem !important;
+}
+
+.accordion-button:hover {
+  background-color: #FF914D;
+  color: #fff;
+}
+
+/* Accordion Items – odstępy między elementami */
+.accordion-item {
+  margin-bottom: 0.5rem;
+  border: none;
+}
+
+/* Listy w accordion */
+.list-group-item {
+  background-color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Ikony w przyciskach accordion */
+.accordion-button .icon {
+  height: 3rem;
+  width: auto;
+}
+
+.card-header.text-center h3 {
+  font-size: 2.5rem !important;
+}
+
+
+.contact-header {
+  background-image: url("img/contact-bg.jpg"); /* Możesz później dodać własne zdjęcie */
+  background-size: cover;
+  background-position: center;
+  color: #e1e5f2;
+  padding: 100px 0;
+  text-align: center;
+}
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.contact-header p {
+  font-size: 1.25rem;
+}
+.contact-info .icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ff914d;
+}
+.contact-info li {
+  margin-bottom: 10px;
+}
+.contact-buttons a.my-button {
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff914d, #ff763b);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.contact-buttons a.my-button:hover {
+  background: linear-gradient(to right, #ff763b, #ff914d);
+}
+.contact-section {
+  padding: 60px 0;
+  background-color: #000;
+  background-image: url("img/bacground1.2.png");
+  color: #e1e5f2;
+}

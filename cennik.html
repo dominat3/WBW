@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wysoka Bike Workshop</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="fontello-4e6ec23c/css/fontello.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Wys ka 12.42.21.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo / Nazwa serwisu -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <!--
+             <img src="img/logo.priary.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+        -->
+            <span>Wysoka Bike Workshop</span>
+          </a>
+  
+          <!-- Przyciski do rozwijania menu na urządzeniach mobilnych -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Linki w nawigacji i przyciski po prawej -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cennik.html">Cennik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Regulamin Serwisu Rowerowego.pdf">Regulamin</a>
+              </li>
+            </ul>
+  
+            <!-- Przycisk "Umów wizytę" -->
+            <a href="booking.html" class="btn btn-umow d-flex align-items-center">
+              Umów wizytę
+              <!-- Ikonka kalendarza - zamień na własną ścieżkę jeśli trzeba -->
+              <img
+                src="icons/calendar.svg"
+                alt="calendar"
+                width="24"
+                style="margin-left: 8px"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container container-fluid">
+        <!-- <h2 class="text-center">Cennik</h2> -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header text-center">
+                <h3>Pakiety Przeglądów</h3>
+              </div>
+              <div
+                class="accordion text-center"
+                id="accordionExample"
+              >
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      Serwis podstawowy: 120zł
+                      <img src="img/icons8-wrench-50.png" alt="" class="icon" />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Sprawdzanie stanu roweru (diagnostyka)
+                        </li>
+                        <li class="list-group-item">Regulacja przerzutek</li>
+                        <li class="list-group-item">Regulacja hamulców</li>
+                        <li class="list-group-item">Smarowanie łańcucha</li>
+                        <li class="list-group-item">Dokręcanie śrub</li>
+                        <li class="list-group-item">
+                          Sprawdzanie ciśnienia w oponach
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Serwis kompleksowy: 200zł
+                      <img
+                        src="img/icons8-service-64.png"
+                        alt=""
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Sprawdzanie stanu roweru (diagnostyka)
+                        </li>
+                        <li class="list-group-item">Regulacja przerzutek</li>
+                        <li class="list-group-item">Regulacja hamulców</li>
+                        <li class="list-group-item">Smarowanie łańcucha</li>
+                        <li class="list-group-item">Dokręcanie śrub</li>
+                        <li class="list-group-item">
+                          Sprawdzanie ciśnienia w oponach
+                        </li>
+                        <li class="list-group-item">
+                          Mycie napędu (łańcuch, kaseta, przerzutki, korba)
+                        </li>
+                        <li class="list-group-item">
+                          Centrowanie kół (bez wymiany szprych)
+                        </li>
+                        <li class="list-group-item">Regulacja sterów</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 class="accordion-header">
+                    Złożenie nowego roweru <br />
+                    z pudełka: 80 zł
+                  </h2>
+                </div>
+                <div class="header">
+                  <h2 class="accordion-header">Mycie roweru: 25zł</h2>
+                </div>
+              </div>
+              <p class="card-body text-center" style="margin: 0">
+                Podane ceny w niektórych przypadkach dotyczą wyłącznie kosztów
+                robocizny i nie obejmują kosztów materiałów użytych do naprawy.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header text-center">
+                <h3>Serwis poszczególnych układów</h3>
+              </div>
+              <div
+                class="accordion card-body text-center"
+                id="PoszczególneUkłady"
+              >
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad1"
+                      aria-expanded="false"
+                      aria-controls="uklad1"
+                    >
+                      Układ Kierowniczy
+                      <img
+                        src="img/icons8-bicycle-handlebar-80.png"
+                        alt="kierownica"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn1"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Wymiana kierownicy: 35 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana wspornika kierownicy: 40 zł
+                        </li>
+                        <li class="list-group-item">Wymiana chwytów: 15 zł</li>
+                        <li class="list-group-item">Montaż licznika: 20 zł</li>
+                        <li class="list-group-item">
+                          Nabicie gwiazdki rury sterowej: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Czyszczenie i smarowanie łożysk steru: 30 zł
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad2"
+                      aria-expanded="false"
+                      aria-controls="uklad2"
+                    >
+                      Przerzutki
+                      <img
+                        src="img/icons8-bicycle-rear-derailleur-80.png"
+                        alt="przerzutka"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn2"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Regulacja przerzutek: 25 zł
+                        </li>
+                        <li class="list-group-item">Wymiana manetki: 35 zł</li>
+                        <li class="list-group-item">
+                          Wymiana przerzutki: 35zł
+                        </li>
+                        <li class="list-group-item">
+                          Prostowanie haka przerzutki: 40 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana linki/pancerza z regulacją: 40 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana linki/pancerza z prowadzeniem wewnątrz ramy +
+                          regulacja: 50 zł
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn3">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad3"
+                      aria-expanded="false"
+                      aria-controls="uklad3"
+                    >
+                      Hamulce
+                      <img
+                        src="img/icons8-bicycle-brake-caliper-80.png"
+                        alt="pedały"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn3"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Regulacja hamulców mechanicznych: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Regulacja hamulców hydraulicznych: 40 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana klocków z regulacją: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Prostowanie tarczy hamulcowej: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana linki/pancerza hamulca mechanicznego: 20 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana przewodu hamulca hydraulicznego: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana hamulca z regulacją: 60 zł
+                        </li>
+                        <li class="list-group-item">
+                          Odpowietrzenie hamulca hydraulicznego: 40 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana tarczy hamulcowej z regulacją: 30 zł
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn4">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad4"
+                      aria-expanded="false"
+                      aria-controls="uklad4"
+                    >
+                      Operacje na ramie
+                      <img
+                        src="img/icons8-bicycle-frame-80.png"
+                        alt="rama roweru"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn4"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Wymiana sztycy podsiodełkowej: 20 zł
+                        </li>
+                        <li class="list-group-item">
+                          Montaż sztycy regulowanej: 120 zł
+                        </li>
+                        <li class="list-group-item">Montaż błotników: 30 zł</li>
+                        <li class="list-group-item">Montaż bagażnika: 40 zł</li>
+                        <li class="list-group-item">
+                          Montaż nóżki/podpórki: 20 zł
+                        </li>
+                        <li class="list-group-item">Wymiana siodełka: 20 zł</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn5">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad5"
+                      aria-expanded="false"
+                      aria-controls="uklad5"
+                    >
+                      Układ napędowy
+                      <img
+                        src="img/icons8-bicycle-cassette-80.png"
+                        alt="napęd"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn5"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Wymiana pedałów: 15 zł</li>
+                        <li class="list-group-item">Wymiana korby: 40 zł</li>
+                        <li class="list-group-item">
+                          Wymiana blatu korby: 30 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana wkręcanego wkładu suportu: 50 zł
+                        </li>
+                        <li class="list-group-item">
+                          Wymiana kasety/wolnobiegu: 40 zł
+                        </li>
+                        <li class="list-group-item">Wymiana łańcucha: 25 zł</li>
+                        <li class="list-group-item">
+                          Skracanie/naciąganie łańcucha (do napędu): 20 zł
+                        </li>
+                        <li class="list-group-item">
+                          Smarowanie łańcucha: 10 zł
+                        </li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item header">
+                  <h2 class="accordion-header" id="btn6">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#uklad6"
+                      aria-expanded="false"
+                      aria-controls="uklad6"
+                    >
+                      Koła, piasty, dętki
+                      <img
+                        src="img/icons8-bicycle-wheel-80.png"
+                        alt="koło"
+                        class="icon"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="uklad6"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="btn6"
+                    data-bs-parent="#PoszczególneUkłady"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Centrowanie koła: 50 zł</li>
+                        <li class="list-group-item">
+                          Wymiana dętki lub opony: 30 zł
+                        </li>
+                        <li class="list-group-item">Dokręcanie piasty: 20zł</li>
+                        <li class="list-group-item">Serwis piasty: 40 zł</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h4 class="text-center">Kontakt</h4>
+          <a href="tel:+48690032004" role="link" class="link">
+            <i class="icon-phone"></i>+48 690 032 004</a
+          ><br />
+          <a href="mail:szymon@wysokabikeworkshop.pl" class="link"
+            ><i class="icon-mail"></i>szymon@wysokabikeworkshop.pl
+          </a>
+          <p>
+            <a
+              href="https://maps.app.goo.gl/AqNAdon2eLA94rbt8"
+              class="link"
+              target="_blank"
+              ><i class="icon-location"></i>ul. Chabrowa 97, Wysoka</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h4>Godziny otwarcia:</h4>
+          Poniedziałek - Piątek: 17:30- 20:00<br />
+          Sobota: 10:00 - 18:00<br />
+          Niedziela: 14:00 - 20:00
+        </div>
+      </div>
+      <div class="col-12">
+        <p>&copy; 2024 Wysoka Bike Workshop. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Toast Container -->
+  <div aria-live="polite" aria-atomic="true" class="position-relative">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="visitToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-autohide="true"
+        data-bs-delay="30000"
+      >
+        <div class="toast-header">
+          <!-- Opcjonalnie możesz dodać ikonę, np.: -->
+          <i class="icon-info me-2"></i>
+          <strong class="me-auto">Informacja</strong>
+          <small>Teraz</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Ponieważ nie mamy wynajętego lokalu, prosimy o umówienie wizyty
+          przed przybyciem.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="scripts/toast.js"></script>
+  </body>
+</html>

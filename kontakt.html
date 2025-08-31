@@ -3,39 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wysoka Bike Workshop</title>
+    <title>Kontakt | Wysoka Bike Workshop</title>
+    <!-- Bootstrap 5 CSS -->
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Własne style -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Ikony -->
     <link rel="stylesheet" href="fontello-4e6ec23c/css/fontello.css" />
     <link rel="shortcut icon" type="image/png" href="img/Wys ka 12.42.21.png" />
   </head>
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
-        <img src="img/Wys ka 12.42.21.png" alt="Logo" />
-        Wysoka Bike Workshop
-      </a>
-    </nav> -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" class="brand">
-          𝐖𝐲𝐬𝐨𝐤𝐚 𝐁𝐢𝐤𝐞 𝐖𝐨𝐫𝐤𝐬𝐡𝐨𝐩
-          <!-- <img src="img/logo.priary.png" alt="" /> -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo / Nazwa serwisu -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <span>Wysoka Bike Workshop</span>
         </a>
+        <!-- Toggler (dla urządzeń mobilnych) -->
         <button
           class="navbar-toggler"
           type="button"
@@ -47,7 +35,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menu nawigacyjne -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="kontakt.html"
@@ -55,71 +47,219 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="regulaminSerwisu">Regulamin</a>
+              <a class="nav-link" href="cennik.html">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Regulamin Serwisu Rowerowego.pdf"
+                >Regulamin</a
+              >
             </li>
           </ul>
+          <!-- Przycisk "Umów wizytę" -->
+          <a href="booking.html" class="btn btn-umow d-flex align-items-center">
+            Umów wizytę
+            <img
+              src="icons/calendar.svg"
+              alt="calendar"
+              width="24"
+              style="margin-left: 8px"
+            />
+          </a>
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="header text-center">
+    <!-- Header z tytułem kontaktu -->
+    <header class="contact-header">
       <div class="container">
-        <h1 class="brand">Kontakt</h1>
+        <h1>Skontaktuj się z nami</h1>
+        <p>
+          Jesteśmy tu, aby pomóc! Skorzystaj z poniższych informacji lub
+          wypełnij formularz i odpowiemy na Twoje pytania.
+        </p>
       </div>
     </header>
 
-    <!-- Contact Section -->
-    <section>
-      <div class="text-center kontakt">
-        <a class="my-button" href="mailto:szymon@wysokabikeworkshop.pl"
-          ><i class="icon-mail"></i>Napisz do nas- Szymon</a
-        >
-        <a class="my-button" href="mailto:michal@wysokabikeworkshop.pl"
-          ><i class="icon-mail"></i>Napisz do nas- Michał</a
-        >
-        <a class="my-button" href="tel:+48690032004" role="link"
-          ><span></span><i class="icon-phone"></i>Zadzwoń do nas</a
-        >
+    <!-- Sekcja Kontakt -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <!-- Kolumna z danymi kontaktowymi -->
+          <div class="col-md-6">
+            <h2>Dane kontaktowe</h2>
+            <p>
+              Masz pytania lub chcesz umówić wizytę? Skontaktuj się z nami
+              telefonicznie, mailowo lub odwiedź nas osobiście po wcześniejszym
+              uzgodnieniu terminu.
+            </p>
+            <ul class="list-unstyled contact-info">
+              <li>
+                <a href="tel:+48690032004" role="link" class="link">
+                  <i class="icon-phone"></i>+48 690 032 004
+                </a>
+              </li>
+              <li>
+                <i class="icon-mail"></i><strong>Email:</strong>
+                <a href="mailto:szymon@wysokabikeworkshop.pl" class="link">
+                  szymon@wysokabikeworkshop.pl
+                </a>
+              </li>
+              <li>
+                <i class="icon-mail"></i><strong>Email:</strong>
+                <a href="mailto:michal@wysokabikeworkshop.pl" class="link"
+                  >michal@wysokabikeworkshop.pl</a
+                >
+              </li>
+              <li>
+                <i class="icon-location"></i><strong>Adres:</strong>
+                <a
+                  href="https://maps.app.goo.gl/AqNAdon2eLA94rbt8"
+                  class="link"
+                  target="_blank"
+                >
+                  ul. Chabrowa 97, Wysoka
+                </a>
+              </li>
+            </ul>
+            <div class="contact-buttons">
+              <a class="my-button" href="mailto:szymon@wysokabikeworkshop.pl">
+                <i class="icon-mail"></i> Napisz do Szymona
+              </a>
+              <a class="my-button" href="mailto:michal@wysokabikeworkshop.pl">
+                <i class="icon-mail"></i> Napisz do Michała
+              </a>
+              <a class="my-button" href="tel:+48690032004" role="link">
+                <i class="icon-phone"></i> Zadzwoń do nas
+              </a>
+            </div>
+          </div>
+          <!-- Kolumna z formularzem kontaktowym -->
+          <div class="col-md-6">
+            <h2>Wyślij wiadomość</h2>
+            <p>
+              Możesz także skorzystać z formularza, aby szybko się z nami
+              skontaktować.
+            </p>
+            <form
+              action="mailto:kontakt@wysokabikeworkshop.pl"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="mb-3">
+                <label for="inputName" class="form-label"
+                  >Imię i nazwisko</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  name="name"
+                  placeholder="Twoje imię i nazwisko"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  name="email"
+                  placeholder="Twój email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputMessage" class="form-label">Wiadomość</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  name="message"
+                  rows="4"
+                  placeholder="Wpisz swoją wiadomość"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-umow">
+                Wyślij wiadomość
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <h4 class="text-center">Kontakt</h4>
             <a href="tel:+48690032004" role="link" class="link">
-              <i class="icon-phone"></i>+48 690 032 004</a
+              <i class="icon-phone"></i>+48 690 032 004 </a
             ><br />
-            <a href="mail:szymon@wysokabikeworkshop.pl" class="link"
-              ><i class="icon-mail"></i>szymon@wysokabikeworkshop.pl</a
-            >
+            <a href="mailto:szymon@wysokabikeworkshop.pl" class="link">
+              <i class="icon-mail"></i>szymon@wysokabikeworkshop.pl
+            </a>
             <p>
               <a
                 href="https://maps.app.goo.gl/AqNAdon2eLA94rbt8"
                 class="link"
                 target="_blank"
-                ><i class="icon-location"></i>ul. Chabrowa 97, Wysoka</a
               >
+                <i class="icon-location"></i>ul. Chabrowa 97, Wysoka
+              </a>
             </p>
           </div>
           <div class="col-md-6 col-sm-12">
             <h4>Godziny otwarcia:</h4>
-            Poniedziałek- Piątek: 9:00- 19:00<br />
-            Sobota: 10:00- 18:00<br />
-            Niedziela: nieczynne
+            Poniedziałek - Piątek: 17:30 - 20:00<br />
+            Sobota: 10:00 - 18:00<br />
+            Niedziela: 14:00 - 20:00
           </div>
         </div>
-        <div class="col-12">
+        <div class="text-center mt-3">
           <p>&copy; 2024 Wysoka Bike Workshop. Wszelkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Toast Container -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="visitToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-bs-autohide="true"
+          data-bs-delay="30000"
+        >
+          <div class="toast-header">
+            <i class="icon-info me-2"></i>
+            <strong class="me-auto">Informacja</strong>
+            <small>Teraz</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Ponieważ nie mamy wynajętego lokalu, prosimy o umówienie wizyty
+            przed przybyciem.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/toast.js"></script>
   </body>
 </html>
